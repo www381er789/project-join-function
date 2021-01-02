@@ -1,0 +1,51 @@
+<html>
+<head>
+    <script>
+        var encrypted_channel_id = 'Ko7MHXEa32vPPlEm-JvIwEh_YK3f1sAFjSZHhhaV2Uc';
+
+    </script>
+    <script async src='/scripts/hosted.js'></script>
+    <link rel='stylesheet' href='/style.css'>
+</head>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>BUILDING PARAGRAPHS USING JOIN FUNCTION</title>
+</head>
+
+<body>
+   <hr>
+    <h1>Join Paragraphs</h1>
+    <hr>
+    <script>
+        function Paragraph1() {
+            var inputs = [];
+            for (var i = 1; i <= 6; i++) {
+                inputs.push(document.getElementById("div1_input_box_" + i).value);
+            }
+            document.getElementById("showParagraph1").innerHTML = inputs.join(" ");
+        }
+    
+        function Paragraph2() {
+            var inputs = [];
+            for (var i = 1; i <= 6; i++) {
+                inputs.push(document.getElementById("div2_input_box_" + i).value);
+            }
+            document.getElementById("showParagraph2").innerHTML = inputs.join(" ");
+        }
+    
+    </script>
+    <div style="float: right;">
+            <h4> <span>1 )</span> <input style="border-width:2px;border-color:red;border-radius:5px;" type="text" id="div2_input_box_1" placeholder="Input box"> <br><br> <span>2 )</span> <input style="border-width:2px;border-color:red;border-radius:5px;" type="text" id="div2_input_box_2" placeholder="Input box"> <br><br> <span>3 )</span> <input style="border-width:2px;border-color:yellow;border-radius:5px;" type="text" id="div2_input_box_3" placeholder="Input box"> <br><br> <span>4 )</span> <input style="border-width:2px;border-color:green;border-radius:5px;" type="text" id="div2_input_box_4" placeholder="Input box"> <br><br> <span>5 )</span> <input style="border-width:2px;border-color:lightgreen;border-radius:5px;" type="text" id="div2_input_box_5" placeholder="Input box"> <br><br> <span>6 )</span> <input style="border-width:2px;border-color:purple;border-radius:5px;" type="text" id="div2_input_box_6" placeholder="Input box"> </h4> <button id="2" class="button button3" onclick="Paragraph2()">Get paragraph 2</button> <br>
+            <h1 id="showParagraph2"></h1>
+        </div>
+        <div style="float: right;">
+            <h4> <span>1 )</span> <input style="border-width:2px;border-color:red;border-radius:5px;" type="text" id="div1_input_box_1" placeholder="Input box "> <br><br> <span>2 )</span> <input style="border-width:2px;border-color:orange;border-radius:5px;" type="text" id="div1_input_box_2" placeholder="Input box "> <br><br> <span>3 )</span> <input style="border-width:2px;border-color:yellow;border-radius:5px;" type="text" id="div1_input_box_3" placeholder="Input box "> <br><br> <span>4 )</span> <input style="border-width:2px;border-color:green;border-radius:5px;" type="text" id="div1_input_box_4" placeholder="Input box "> <br><br> <span>5 )</span> <input style="border-width:2px;border-color:lightgreen;border-radius:5px;" type="text" id="div1_input_box_5" placeholder="Input box "> <br><br> <span>6 )</span> <input style="border-width:2px;border-color:purple;border-radius:5px;" type="text" id="div1_input_box_6" placeholder="Input box "> </h4> <button id="1" class="button button3" onclick="Paragraph1()">Get paragraph 1</button> <br>
+            <h1 id="showParagraph1"></h1>
+        </div>
+        <h1 id="joinall"></h1>
+        <br>
+</body>   
